@@ -233,7 +233,7 @@
                     <p class="text">We’re excited to hear from you
                       and let’s start something special
                       together <br>
-                      <a href="mailTo:hello@redoxagency.com">hello@redoxagency.com</a>
+                      <a href="mailto:hello@specificdesigns.in">hello@specificdesigns.in</a>
                     </p>
                   </div>
                   <div class="contact-social">
@@ -249,37 +249,42 @@
                   </div>
                 </div>
                 <div class="contact-wrap">
-                  <form id="contact__form" method="POST" action="./mail.php">
+                  <form id="contact__form" method="POST" action="https://formsubmit.co/hariandprojects@gmail.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Submission from SpecificDesigns">
+                    <input type="hidden" name="_next" value="https://www.specificdesigns.in/contact.html">
+
                     <div class="contact-formwrap">
                       <div class="contact-formfield">
-                        <input type="text" name="name" id="name" placeholder="Name*">
+                        <input type="text" name="name" id="name" placeholder="Name*" aria-label="Name">
                       </div>
                       <div class="contact-formfield">
-                        <input type="text" name="email" id="email" placeholder="Email*">
+                        <input type="text" name="email" id="email" placeholder="Email*" aria-label="Email">
                       </div>
                       <div class="contact-formfield">
-                        <input type="text" name="phone" id="phone" placeholder="Phone*">
+                        <input type="text" name="phone" id="phone" placeholder="Phone*" aria-label="Phone">
                       </div>
                       <div class="contact-formfield">
-                        <input type="text" name="company" id="company" placeholder="Company">
+                        <input type="text" name="company" id="company" placeholder="Company" aria-label="Company">
                       </div>
                       <div class="contact-formfield">
-                        <select name="Budget" id="Budget">
+                        <select name="Budget" id="Budget" aria-label="Budget">
                           <option value="0" disabled selected>Budget*</option>
-                          <option value="1">5,000 - 10,000</option>
-                          <option value="2">10,000 - 15,000</option>
-                          <option value="3">15,000 - 20,000</option>
-                          <option value="4">20,000 - 25,000</option>
-                          <option value="5">25,000 - Above</option>
+                          <option value="1">50L - 1Cr</option>
+                          <option value="2">1Cr - 2Cr</option>
+                          <option value="3">2Cr - 5Cr</option>
+                          <option value="4">5Cr - 10Cr</option>
+                          <option value="5">10Cr - Above</option>
                         </select>
                       </div>
                       <div class="contact-formfield">
-                        <input type="text" name="solution" id="solution" placeholder="Solution*">
+                        <input type="text" name="solution" id="solution" placeholder="Solution*" aria-label="Solution">
                       </div>
                       <div class="contact-formfield message">
-                        <input type="text" name="message" id="message" placeholder="Message*">
+                        <input type="text" name="message" id="message" placeholder="Message*" aria-label="Message">
                       </div>
                     </div>
+
                     <div class="submit-btn">
                       <button type="submit" class="rr-btn">
                         <span class="btn-wrap">

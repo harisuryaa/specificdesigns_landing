@@ -1754,29 +1754,29 @@
     });
   }
 
-  // contact-form-daynamic
-  $(document).ready(function () {
-    $('#contact__form').submit(function (event) {
-      event.preventDefault();
-      var form = $(this);
-      $('.loading-form').show();
-
-      setTimeout(function () {
-        $.ajax({
-          type: form.attr('method'),
-          url: form.attr('action'),
-          data: form.serialize()
-        }).done(function (data) {
-          $('.loading-form').hide();
-          $('#response-message').html('<p class="success-message">Your message has been sent successfully.</p>');
-          form[0].reset();
-        }).fail(function () {
-          $('.loading-form').hide();
-          $('#response-message').html('<p class="error-message">Something went wrong. Please try again later.</p>');
-        });
-      }, 1000);
-    });
-  });
+//  // contact-form-daynamic
+//  $(document).ready(function () {
+//    $('#contact__form').submit(function (event) {
+//      event.preventDefault();
+//      var form = $(this);
+//      $('.loading-form').show();
+//
+//      setTimeout(function () {
+//        $.ajax({
+//          type: form.attr('method'),
+//          url: form.attr('action'),
+//          data: form.serialize()
+//        }).done(function (data) {
+//          $('.loading-form').hide();
+//          $('#response-message').html('<p class="success-message">Your message has been sent successfully.</p>');
+//          form[0].reset();
+//        }).fail(function () {
+//          $('.loading-form').hide();
+//          $('#response-message').html('<p class="error-message">Something went wrong. Please try again later.</p>');
+//        });
+//      }, 1000);
+//    });
+//  });
 
   // circle Animation
   const circleAnimation = document.querySelector(".circle-text .text");
